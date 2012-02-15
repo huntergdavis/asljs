@@ -1,0 +1,8 @@
+Sign language javascript is just a litle library that converts text to ASL manual sign language photos from the public domain.
+
+It's released with a BSD license found in license.txt
+jsasl.js contains the functions to display the images
+index.html contains an example page
+README is this file
+
+

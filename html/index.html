@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src="../js/jsasl.js"></script>
+<script type="text/javascript">
+  var ASLGlueFunction = function() {
+    var submitTextBox = document.getElementById("submitinfo");
+    textToASL(submitTextBox.value, 0, "aslout", "asldescription");
+  }
+</script>
+<style type="text/css">
+  .centeredImage
+    {
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+    }
+</style>
+</head>
+<body>
+<h1>Text To ASL</h1>
+  <div>
+	<input id="submitinfo" type="text"></input>
+	<input id="submitbox" type="submit" onclick="ASLGlueFunction()"></input>
+  </div>	
+<p id="asldescription" align="center"></p>
+<p class="centeredImage"><image id="aslout" src="../images/empty.png" align="center"></image></p>
+</body>
+</html>
