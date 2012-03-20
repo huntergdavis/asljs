@@ -1,12 +1,12 @@
 var insertImpressDiv = function(photoSrc, index, charToConvert,totalLength) {
 	// space out each slide by 2k 	
-	var yValue = index * 2000;
+	var xValue = index * 2000;
 
 	// build a div entry for each slide with basic impressJS
 	var divEntry = "<div id=\"asl";
 	divEntry += index + "\" ";
-	divEntry += "class=\"step slide\" data-x=\"0\" data-y=\"";
-	divEntry += yValue + "\" ";
+	divEntry += "class=\"step slide\" data-y=\"0\" data-x=\"";
+	divEntry += xValue + "\" ";
 	divEntry += "data-scale=\"1\">";
 	divEntry += "<h1 align=\"center\">" + charToConvert + "</h1>";
 	divEntry += "<p class=\"centeredImage\"><image id=\"aslout\" src=\"";
