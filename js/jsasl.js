@@ -1,6 +1,6 @@
 var insertImpressDiv = function(photoSrc, index, charToConvert,totalLength) {
 	// space out each slide by 2k 	
-	var xValue = index * 2000;
+	var xValue = index * 500;
 
 	// build a div entry for each slide with basic impressJS
 	var divEntry = "<div id=\"asl";
