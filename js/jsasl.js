@@ -29,12 +29,12 @@ var displayASL = function(textToConvert, index,totalLength) {
   if (badCharacters.indexOf(charToConvert) == -1) {
     if(charToConvert == " ")
     {
-      photoSrc ="../images/empty.png";   
+      photoSrc ="./images/empty.png";   
     } else {
-      photoSrc ="../images/" + charToConvert + ".png";
+      photoSrc ="./images/" + charToConvert + ".png";
     }
   } else {
-      photoSrc ="../images/empty.png";   
+      photoSrc ="./images/empty.png";   
   }
 
   insertImpressDiv(photoSrc, index, charToConvert,totalLength);
