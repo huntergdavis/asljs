@@ -1,12 +1,19 @@
 <html>
 <head>
-<script type="text/javascript" src="../js/jsasl.js"></script>
+<title>Text To Impress.js ASL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=1024">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold%7CPT+Sans:400,700,400italic,700italic%7CPT+Serif:400,700,400italic,700italic" rel="stylesheet">
+<link href="../css/asl.css" rel="stylesheet">
 <script type="text/javascript">
   var ASLGlueFunction = function() {
     var submitTextBox = document.getElementById("submitinfo");
-    textToASL(submitTextBox.value, 0, "aslout", "asldescription");
+    textToASL(submitTextBox.value);
   }
 </script>
+<script type="text/javascript" src="../js/jsasl.js"></script>
 <style type="text/css">
   .centeredImage
     {
@@ -18,12 +25,13 @@
 </style>
 </head>
 <body>
-<h1>Text To ASL</h1>
-  <div>
+  <div id="submitbox" class="aslsubmit">
+<h1>Text To Impress.js ASL</h1>
+<p>Simply enter text and click submit, your text is converted to a impress.JS slide presentation of ASL letters.</p>
 	<input id="submitinfo" type="text"></input>
 	<input id="submitbox" type="submit" onclick="ASLGlueFunction()"></input>
   </div>	
-<p id="asldescription" align="center"></p>
-<p class="centeredImage"><image id="aslout" src="../images/empty.png" align="center"></image></p>
+<div id="impress" class="impress-not-supported">
+</div>
 </body>
 </html>
