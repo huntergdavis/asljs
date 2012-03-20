@@ -49,7 +49,7 @@ var textToASL = function(textToConvert) {
 	var impressLoad = document.createElement('script');
 	impressLoad.type = 'text/javascript'; 
 	impressLoad.async = true;
-	impressLoad.src = '../js/impressjs/js/impress.js';
+	impressLoad.src = './js/impressjs/js/impress.js';
 
 	impressLoad.onload = function () {
 	 impress();
