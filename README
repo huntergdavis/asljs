@@ -1,5 +1,7 @@
 Sign language javascript is just a litle library that converts text to ASL manual sign language photos from the public domain.
 
+It now takes the text you enter and creates an impress.JS presentation dynamically for you to flip through.
+
 It's released with a BSD license found in license.txt
 jsasl.js contains the functions to display the images
 index.html contains an example page
